@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="./scripts/main.js" defer></script>
     <title>F1 Stats</title>
   </head>
   <body>
@@ -51,21 +52,21 @@
             <h2 class="win__card-title">
               Время с последней победы команды (Scuderia Ferrari)
             </h2>
-            <div class="win__card-stopwatch stopwatch">
+            <div class="win__card-stopwatch stopwatch is-hidden" data-js-stopwatch>
               <div class="stopwatch__segment">
-                <span class="stopwatch__value" id="days">000</span>
+                <span class="stopwatch__value" id="days" data-js-stopwatch-days>?</span>
                 <span class="stopwatch__label">Дней</span>
               </div>
               <div class="stopwatch__segment">
-                <span class="stopwatch__value" id="hours">00</span>
+                <span class="stopwatch__value" id="hours" data-js-stopwatch-hours>?</span>
                 <span class="stopwatch__label">Часов</span>
               </div>
               <div class="stopwatch__segment">
-                <span class="stopwatch__value" id="minutes">00</span>
+                <span class="stopwatch__value" id="minutes" data-js-stopwatch-minutes>?</span>
                 <span class="stopwatch__label">Минут</span>
               </div>
               <div class="stopwatch__segment">
-                <span class="stopwatch__value" id="seconds">00</span>
+                <span class="stopwatch__value" id="seconds" data-js-stopwatch-seconds>?</span>
                 <span class="stopwatch__label">Секунд</span>
               </div>
             </div>
@@ -99,19 +100,19 @@
               <ul class="team__card-stats">
                 <li class="team__card-stat">
                   <span class="team__card-stat-label">Гонки:</span>
-                  <span class="team__card-stat-value">100</span>
+                  <span class="team__card-stat-value" data-js-statistic-races>100</span>
                 </li>
                 <li class="team__card-stat">
                   <span class="team__card-stat-label">Победы:</span>
-                  <span class="team__card-stat-value">20</span>
+                  <span class="team__card-stat-value" data-js-statistic-wins>20</span>
                 </li>
                 <li class="team__card-stat">
                   <span class="team__card-stat-label">Подиумы:</span>
-                  <span class="team__card-stat-value">50</span>
+                  <span class="team__card-stat-value" data-js-statistic-podiums>50</span>
                 </li>
                 <li class="team__card-stat team__card-stat--last-win">
                   <span class="team__card-stat-label">Последняя победа:</span>
-                  <span class="team__card-stat-value"
+                  <span class="team__card-stat-value" data-js-statistic-last-win
                     >UNITED STATES (20 OCT 2024)</span
                   >
                 </li>
