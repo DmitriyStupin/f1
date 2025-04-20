@@ -439,7 +439,7 @@ a[class] {
 }
 
 .team {
-  padding-block: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 .team__inner {
   display: flex;
