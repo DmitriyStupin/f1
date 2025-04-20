@@ -1,0 +1,21 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-black: #131313;
+  --color-black-15: #15151E;
+
+  --scuderia-ferrari-red: #EF1A2D;
+  --scuderia-ferrari-gradient: linear-gradient(180deg, var(--scuderia-ferrari-red) 0%, rgba(128, 0, 0, 1) 100%);
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --font-family-base: "Exo 2", sans-serif;
+
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>F1 Stats</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo logo" title="Home">
+          <img
+            width="100"
+            height="100"
+            src="./images/icons/logo.svg"
+            alt="F1 Stats"
+          />
+        </a>
+        <form class="header__form">
+          <select name="team" id="team" class="header__select">
+            <option
+              value="Scuderia Ferrari"
+              class="header__option"
+              data-value="ferrari"
+            >
+              Scuderia Ferrari
+            </option>
+            <option
+              value="Scuderia Ferrari"
+              class="header__option"
+              data-value="redbull"
+            >
+              Red Bull Racing
+            </option>
+          </select>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">F1 Stats</h1>
+      <section class="win">
+        <div class="win__inner container">
+          <div class="win__card">
+            <h2 class="win__card-title">
+              Время с последней победы команды (Scuderia Ferrari)
+            </h2>
+            <div class="win__card-stopwatch stopwatch">
+              <div class="stopwatch__segment">
+                <span class="stopwatch__value" id="days">000</span>
+                <span class="stopwatch__label">Дней</span>
+              </div>
+              <div class="stopwatch__segment">
+                <span class="stopwatch__value" id="hours">00</span>
+                <span class="stopwatch__label">Часов</span>
+              </div>
+              <div class="stopwatch__segment">
+                <span class="stopwatch__value" id="minutes">00</span>
+                <span class="stopwatch__label">Минут</span>
+              </div>
+              <div class="stopwatch__segment">
+                <span class="stopwatch__value" id="seconds">00</span>
+                <span class="stopwatch__label">Секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="team__inner container">
+          <h2 class="team__title">Пилоты команды</h2>
+          <ul class="team__cards">
+            <li class="team__card">
+              <img
+                class="team__card-photo"
+                width="400"
+                height="500"
+                src="./images/teams/ferrari/leclerc.avif"
+                alt="Charles Leclerc #16"
+              />
+              <div class="team__card-info">
+                <h3 class="team__card-name">Charles Leclerc #16</h3>
+                <img
+                  src="./images/countries/monaco.avif"
+                  width="45"
+                  height="45"
+                  alt="Monaco"
+                  class="team__card-country"
+                  title="Monaco"
+                />
+              </div>
+              <ul class="team__card-stats">
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Гонки:</span>
+                  <span class="team__card-stat-value">100</span>
+                </li>
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Победы:</span>
+                  <span class="team__card-stat-value">20</span>
+                </li>
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Подиумы:</span>
+                  <span class="team__card-stat-value">50</span>
+                </li>
+                <li class="team__card-stat team__card-stat--last-win">
+                  <span class="team__card-stat-label">Последняя победа:</span>
+                  <span class="team__card-stat-value"
+                    >UNITED STATES (20 OCT 2024)</span
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="team__card">
+              <img
+                class="team__card-photo"
+                width="400"
+                height="500"
+                src="./images/teams/ferrari/hamilton.avif"
+                alt="Lewis Hamilton #44"
+              />
+              <div class="team__card-info">
+                <h3 class="team__card-name">Lewis Hamilton #44</h3>
+                <img
+                  src="./images/countries/united-kingdom.avif"
+                  width="45"
+                  height="45"
+                  alt="United Kingdom"
+                  class="team__card-country"
+                  title="United Kingdom"
+                />
+              </div>
+              <ul class="team__card-stats">
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Гонки:</span>
+                  <span class="team__card-stat-value">100</span>
+                </li>
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Победы:</span>
+                  <span class="team__card-stat-value">20</span>
+                </li>
+                <li class="team__card-stat">
+                  <span class="team__card-stat-label">Подиумы:</span>
+                  <span class="team__card-stat-value">50</span>
+                </li>
+                <li class="team__card-stat team__card-stat--last-win">
+                  <span class="team__card-stat-label">Последняя победа:</span>
+                  <span class="team__card-stat-value"
+                    >UNITED STATES (20 OCT 2024)</span
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <a href="#" class="footer__logo logo">
+          <img
+            width="100"
+            height="100"
+            src="./images/icons/logo.svg"
+            alt="F1 Stats"
+          />
+        </a>
+        <p class="footer__text">
+          Created by <a class="footer__link" href="">Dmitry Stupin</a> with Love❤️
+        </p>
+        <ul class="footer__soc1al">
+          <li class="footer__soc1al-item">
+            <a href="https://t.me/stupin_dmitry" class="footer__soc1al-link" target="_blank">
+              <img
+                width="40"
+                height="40"
+                src="./images/icons/tg.svg"
+                alt="Telegram"
+              />
+            </a>
+          </li>
+          <li class="footer__soc1al-item">
+            <a href="https://vk.com/dmitry.stupin" class="footer__soc1al-link" target="_blank">
+              <img
+                width="40"
+                height="40"
+                src="./images/icons/vk.svg"
+                alt="VK"
+              />
+            </a>
+          </li>
+          <li class="footer__soc1al-item">
+            <a href="https://github.com/DmitriyStupin" class="footer__soc1al-link" target="_blank">
+              <img
+                width="40"
+                height="40"
+                src="./images/icons/github.svg"
+                alt="Github"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

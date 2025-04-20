@@ -1,0 +1,83 @@
+@use "../helpers" as *;
+
+.team {
+  padding-block: rem(30);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 10);
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      row-gap: fluid(40, 20);
+    }
+  }
+
+  &__card {
+    background-color: var(--color-light);
+    padding: fluid(30, 15);
+    border-radius: rem(8);
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(10, 6);
+
+    &-photo {
+      border-radius: rem(8);
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-name {
+      font-weight: 700;
+      font-size: fluid(36, 24);
+      color: var(--color-black);
+    }
+
+    &-country {
+      width: rem(45);
+      border-radius: rem(6);
+      border: rem(1) solid var(--color-black);
+    }
+
+    &-stats {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(6);
+    }
+
+    &-stat {
+      &-label {
+        color: var(--color-black);
+        font-weight: 700;
+        font-size: fluid(20, 14);
+      }
+
+      &-value {
+        font-weight: 500;
+        font-size: fluid(18, 12)
+      }
+
+      &--last-win {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    
+
+    &-value {
+
+    }
+  }
+}

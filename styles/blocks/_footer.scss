@@ -1,0 +1,58 @@
+@use "../helpers" as *;
+
+.footer {
+  background-color: var(--color-black-15);
+  color: var(--color-light);
+  padding-block: fluid(30, 20);
+  text-align: center;
+
+  &__text {
+    font-size: fluid(20, 14);
+  }
+
+  &__link {
+    text-decoration: underline !important;
+    text-underline-offset: 0.1em;
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+  }
+
+  &__logo {
+    filter: invert(1);
+  }
+
+  &__soc1al {
+    display: flex;
+    column-gap: rem(20);
+
+    &-item {
+      transition-duration: var(--transition-duration);
+
+      &:hover {
+        filter: brightness(0.6);
+      }
+    }
+
+    &-link {
+      @include mobile {
+        img {
+          width: rem(30);
+          height: rem(30);
+        }
+      }
+    }
+  }
+}

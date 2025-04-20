@@ -1,0 +1,12 @@
+@use '../helpers' as *;
+
+.header {
+  background-color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
